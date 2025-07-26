@@ -257,7 +257,7 @@ I'm here to help with property issues and tenancy questions. I have two speciali
                     bot_response = self.process_user_input(user_input, uploaded_image)
                     st.session_state.messages.append(bot_response)
                     # Do NOT reset st.session_state.user_input directly; use st.experimental_rerun() to clear widget
-                    st.experimental_rerun()
+                    st.rerun()
             else:
                 st.warning("Please enter a message or upload an image.")
 
