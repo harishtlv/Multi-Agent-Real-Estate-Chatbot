@@ -9,9 +9,9 @@ from dataclasses import dataclass
 import pandas as pd
 
 # Import our agent modules
-from agents.agent_router import AgentRouter
-from agents.issue_detection_agent import IssueDetectionAgent
-from agents.tenancy_faq_agent import TenancyFAQAgent
+from agent_router import AgentRouter
+from issue_detection_agent import IssueDetectionAgent
+from tenancy_faq_agent import TenancyFAQAgent
 from utils.conversation_manager import ConversationManager
 from utils.image_processor import ImageProcessor
 
