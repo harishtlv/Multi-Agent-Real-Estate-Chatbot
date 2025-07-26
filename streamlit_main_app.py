@@ -12,8 +12,8 @@ import pandas as pd
 from agent_router import AgentRouter
 from issue_detection_agent import IssueDetectionAgent
 from tenancy_faq_agent import TenancyFAQAgent
-from utils.conversation_manager import ConversationManager
-from utils.image_processor import ImageProcessor
+from utils import ConversationManager
+from utils import ImageProcessor
 
 # Page configuration
 st.set_page_config(
