@@ -34,7 +34,7 @@ pydantic==2.5.0
 
 # Database (for future persistence)
 sqlalchemy==2.0.23
-sqlite3  # Built-in with Python
+#sqlite3  # Built-in with Python
 
 # Logging and monitoring
 loguru==0.7.2
