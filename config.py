@@ -10,7 +10,7 @@ class Config:
     """Application configuration"""
     
     # API Keys (set these in your .env file)
-    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
     GOOGLE_VISION_API_KEY = os.getenv("GOOGLE_VISION_API_KEY")
     AZURE_VISION_KEY = os.getenv("AZURE_VISION_KEY")
     AZURE_VISION_ENDPOINT = os.getenv("AZURE_VISION_ENDPOINT")
@@ -31,9 +31,9 @@ class Config:
     CONVERSATION_HISTORY_LIMIT = 50
     
     # AI Model settings
-    OPENAI_MODEL = "gpt-4-vision-preview"
-    OPENAI_MAX_TOKENS = 1500
-    OPENAI_TEMPERATURE = 0.7
+    GEMINI_MODEL = "gemini-pro"  # Example model name, update as needed
+    GEMINI_MAX_TOKENS = 1500
+    GEMINI_TEMPERATURE = 0.7
     
     # Database settings (for future use)
     DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///real_estate_bot.db")
@@ -45,7 +45,7 @@ class Config:
     @classmethod
     def validate_config(cls):
         """Validate essential configuration"""
-        required_keys = ["OPENAI_API_KEY"]
+        required_keys = ["GEMINI_API_KEY"]
         missing_keys = [key for key in required_keys if not getattr(cls, key)]
         
         if missing_keys:
