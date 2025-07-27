@@ -1,8 +1,6 @@
 # Multi-Agent Real Estate Chatbot
 
-**Developer:** [Your Name]  
-**Email:** [Your Email]  
-**Submission to:** saksham@data-hat.com, hiring@data-hat.com
+**Developer:** Harish
 
 A sophisticated multi-agentic chatbot system for real estate assistance, featuring specialized agents for property issue detection and tenancy guidance.
 
