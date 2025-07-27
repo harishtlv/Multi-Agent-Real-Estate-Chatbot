@@ -470,6 +470,13 @@ tail -f logs/app.log
 3. **Create Issue**: Submit detailed bug report or feature request
 4. **Email Support**: Contact developer directly for urgent issues
 
+### Streamlit from Google Colab:
+
+```python
+npm install -g localtunnel
+streamlit run app.py &>/content/logs.txt & npx localtunnel --port 8501
+```
+
 ### Feedback
 
 We welcome feedback on:
